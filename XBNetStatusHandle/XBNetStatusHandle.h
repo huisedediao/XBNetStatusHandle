@@ -15,6 +15,8 @@ typedef void(^NotAvailableBlock)(void);
 
 @interface XBNetStatusHandle : NSObject
 
++ (BOOL)isIpv6;
+
 +(void)handleWifiBlock:(WifiBlock)wifiBlock wwanBlock:(WWANBlock)wwanBlock notAvailableBlock:(NotAvailableBlock)notAvailableBlock;
 
 +(void)handleReachabilityChangeWithWifiBlock:(WifiBlock)wifiBlock wwanBlock:(WWANBlock)wwanBlock notAvailableBlock:(NotAvailableBlock)notAvailableBlock;
